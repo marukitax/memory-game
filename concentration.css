@@ -1,0 +1,96 @@
+﻿html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:lightgray
+}
+
+#groupPanel{             /* 追加 */
+  display: grid;         /* 追加 */
+  justify-items: center; /* 追加 */
+  align-content: start;  /* 追加 */
+}                        /* 追加 */
+
+#sourcePanel{            /* 追加 */
+    position:absolute;   /* 追加 */
+    top:620px;           /* 追加 */
+    width: 410px;        /* 追加 */
+    font-size: xx-small; /* 追加 */
+}                        /* 追加 */
+
+#gamePanel{
+    position:absolute;
+    width: 400px;
+    height: 500px;
+    margin-top: 60px;
+    border-color: gray;
+    border-style: solid;
+    border-width: 5px;
+    background-image:url('img2.JPG');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:cover;
+}
+
+.card{
+    float:left;
+    width:90px;
+    height:90px;
+    border-color:black;
+    border-radius:12px;
+    border-style:solid;
+    border-width:5px;
+    text-align:center;
+    vertical-align:middle;
+    line-height:90px;
+    font-size:xx-large;
+}
+
+.back{
+    background-color:rgba(65, 105, 225, 0.7);
+}
+
+.face{
+    background-color:rgba(64, 224, 208, 0.7);
+}
+
+.matched{
+    background-color:transparent;
+    border-color:transparent;
+}
+
+#controlPanel{
+    position:absolute;
+    top:580px;
+    width: 410px;
+    text-align: right;
+}
+
+#displayPanel{
+    position: absolute;
+/*  left: 240px; */      /* 削除 */
+    top:10px;
+    width: 160px;
+    font-size: large;
+}
+
+.score{
+    float:left;
+    width:80px;
+}
+
+.clear{
+    clear:left;
+}
+
+button{
+    font-size:large;
+}
+
+input[type=file]{
+    visibility:hidden;
+    width:1px;
+}
